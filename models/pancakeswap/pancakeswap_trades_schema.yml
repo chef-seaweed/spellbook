@@ -8,7 +8,7 @@ models:
       project: pancakeswap
       contributors: hosuke, chef_seaweed
     config:
-      tags: ['bnb', 'ethereum', 'arbitrum', 'base', 'pancakeswap', 'trades', 'dex', 'hosuke', 'chef_seaweed']
+      tags: ['bnb', 'ethereum', 'arbitrum', 'base', 'zksync', 'pancakeswap', 'trades', 'dex', 'hosuke', 'chef_seaweed']
     description: >
         PancakeSwap trades on BNB chain, Ethereum, Arbitrum and Base across all contracts and versions. This table will load dex trades downstream.
     columns:

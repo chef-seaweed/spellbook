@@ -912,6 +912,8 @@ models:
         +schema: pancakeswap_arbitrum
       base:
         +schema: pancakeswap_base
+      zksync:
+        +schema: pancakeswap_zksync  
 
     bancor:
       +schema: bancor
