@@ -14,6 +14,7 @@ WITH dexs AS
 (
     -- PancakeSwap v2 stableswap
     SELECT
+        t.evt_block_number                                                              AS block_number,
         t.evt_block_time                                                                AS block_time,
         t.buyer                                                                         AS taker, 
         CAST(NULL AS VARBINARY)                                                         AS maker,

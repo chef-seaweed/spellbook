@@ -14,7 +14,8 @@ WITH dexs AS
 (
     -- PancakeSwap v2 MMPool
     SELECT
-        t.evt_block_time                                                                 AS block_time
+       t.evt_block_number                                                                AS block_number
+       , t.evt_block_time                                                                AS block_time
        , t.user                                                                          AS taker
        , t.mm                                                                            AS maker
        , quoteTokenAmount                                                                AS token_bought_amount_raw
