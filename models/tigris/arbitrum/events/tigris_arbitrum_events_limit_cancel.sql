@@ -25,6 +25,7 @@ WITH
     ,'TradingV3_evt_LimitCancelled'
     ,'TradingV4_evt_LimitCancelled'
     ,'TradingV5_evt_LimitCancelled'
+    ,'TradingV6_evt_LimitCancelled'
 ] %}
 
 limit_orders_v1 AS (
@@ -95,3 +96,4 @@ INNER JOIN
     ON a.project_contract_address = c.trading_contract
     AND a.version = c.trading_contract_version
 
+-- reload

@@ -25,6 +25,7 @@ WITH
     ,'TradingV3_evt_PositionLiquidated'
     ,'TradingV4_evt_PositionLiquidated'
     ,'TradingV5_evt_PositionLiquidated'
+    ,'TradingV6_evt_PositionLiquidated'
 ] %}
 
 liquidate_position_v1 AS (
@@ -97,3 +98,4 @@ INNER JOIN
     ON a.project_contract_address = c.trading_contract
     AND a.version = c.trading_contract_version
 
+-- reload

@@ -31,7 +31,8 @@ pairs as (
     'TradingV2_evt_LimitOrderExecuted',
     'TradingV3_evt_LimitOrderExecuted',
     'TradingV4_evt_LimitOrderExecuted',
-    'TradingV5_evt_LimitOrderExecuted'
+    'TradingV5_evt_LimitOrderExecuted',
+    'TradingV6_evt_LimitOrderExecuted'
 ] %}
 
 limit_orders_v1 AS (
@@ -123,3 +124,5 @@ INNER JOIN
 {{ ref('tigris_arbitrum_events_contracts_positions') }} c 
     ON a.project_contract_address = c.trading_contract
     AND a.version = c.trading_contract_version
+
+    -- reload

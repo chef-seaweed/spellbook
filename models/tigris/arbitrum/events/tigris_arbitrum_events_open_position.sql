@@ -31,7 +31,8 @@ pairs as (
     'TradingV2_evt_PositionOpened',
     'TradingV3_evt_PositionOpened',
     'TradingV4_evt_PositionOpened',
-    'TradingV5_evt_PositionOpened'
+    'TradingV5_evt_PositionOpened',
+    'TradingV6_evt_PositionOpened'
 ] %} 
 
 open_position_v1 AS (
@@ -137,3 +138,5 @@ INNER JOIN
 {{ ref('tigris_arbitrum_events_contracts_positions') }} c 
     ON a.project_contract_address = c.trading_contract
     AND a.version = c.trading_contract_version
+
+    -- reload

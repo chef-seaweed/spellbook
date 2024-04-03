@@ -25,6 +25,7 @@ WITH
     ,'TradingV3_evt_AddToPosition'
     , 'TradingV4_evt_AddToPosition'
     , 'TradingV5_evt_AddToPosition'
+    , 'TradingV6_evt_AddToPosition'
 ] %}
 
 {% set add_margin_v1_call_tables = [
@@ -147,6 +148,7 @@ INNER JOIN
     ON a.project_contract_address = c.trading_contract
     AND a.version = c.trading_contract_version
     
+-- reload
 
 
 
